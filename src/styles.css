@@ -1,0 +1,93 @@
+.nav-bar {
+  background: #f55a5a;
+  height: 55px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.logo-title {
+  font-weight: medium;
+}
+
+.icon-logo {
+  font-size: 1.6em;
+}
+
+.location-icon {
+  color: #f55a5a;
+  font-size: 0.7em;
+}
+
+.card {
+  color: #2b283a;
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 1em 20px 40px 20px auto 1em;
+  padding: 18px 0;
+}
+
+.card:not(:last-child) {
+  border-bottom: 1px dotted #d8d8d8;
+}
+
+.card-img {
+  grid-column: 1;
+  grid-row: 1/-1;
+  width: 126px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 1.5625rem;
+  grid-column: 2 / -1;
+  grid-row: 3;
+  margin: 0;
+}
+
+.location-title {
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+}
+
+.spot {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.location-btn {
+  color: #918e9b;
+  grid-column: 3 / -1;
+  grid-row: 2;
+  align-self: center;
+  margin-left: 0.75em;
+}
+
+.location-btn,
+.location-title,
+.date,
+.text {
+  font-size: 0.64rem;
+}
+
+.date {
+  font-weight: bold;
+  line-height: 12px;
+  grid-column: 2 / -1;
+  grid-row: 4;
+  margin: 0;
+}
+
+.text {
+  grid-column: 2 / -1;
+  grid-row: 5;
+  margin: 0;
+  line-height: 150%;
+}
